@@ -1,0 +1,319 @@
+@import "compass/css3";
+
+/*
+font-family: 'Audiowide', cursive;
+font-family: 'Share Tech Mono', monospace;
+font-family: 'Megrim', cursive;
+font-family: 'Share Tech', sans-serif;
+*/
+
+
+body, html {
+    height: 100%;
+}
+
+.bg {
+
+}
+
+body {
+    background-color: black;
+    color: rgb(189, 189, 189);
+    font-family: 'Share Tech Mono', monospace;
+    overflow: hidden;
+}
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+  }
+
+/* The menu bar */
+.menu-bar {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.72);
+    color: #f9f9f9;
+    font-family: 'Share Tech Mono', monospace;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    box-shadow: 0px 10px 10px rgba(34,34,34,0.6);
+    /* box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.73); */
+}
+
+.bottom-bar {
+    overflow: hidden;
+    background-color: rgb(8, 9, 15);
+    color: #f9f9f9;
+    font-family: 'Share Tech Mono', monospace;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -7px 10px rgba(34,34,34,0.6);
+    /* box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.73); */
+    text-align: center;
+    padding: 11px;
+}
+
+.menu-item {
+    /* border: 1px solid #9e045f; */
+    display: block;
+    padding: 3px;
+    padding-right: 11px;
+    padding-left: 11px;
+}
+
+/* Items */
+.item {
+    margin-left: 2vh;
+}
+
+#item-gun {
+    height: 4vh;
+    width: 4vh;
+}
+
+
+.nopadding {
+    padding: 0;
+}
+
+.right{
+    float: right;
+}
+.right span {
+    float: right;
+}
+
+progress {
+    border: none;
+    width: 100px;
+    height: 10px;
+    background: crimson;
+}
+
+.center-input {
+    /* height: 200px; */
+    /* width: 400px; */
+    background: rgba(0, 0, 0, 0);
+    
+    position: fixed;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* margin-top: -100px; */
+    /* margin-left: -200px; */
+}
+
+.center-dialogue {
+    /* height: 200px; */
+    width: 400px;
+    background: rgba(0, 0, 0, 0.53);
+    /* background-color: #0000007d; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+    color: white;
+    font-size: 3vh;
+    padding: 16px;
+}
+
+#dialogue {
+    text-align: left;
+}
+
+#dialogue-center {
+    text-align: center;
+}
+.center-dialogue:empty {
+    display: none;
+}
+
+.battle-earnings {
+    border: 1px solid white;
+    text-align: left;
+    padding: 20px;
+    background: #0000ff6e;
+}
+
+input[type="text"] {
+    background-color : black; 
+}
+
+.title-screen {
+    background-color: black;
+    border-color: black;
+    color: white;
+    font-family: 'Megrim', cursive;
+    font-size: 4vh;
+    /* width: 18em; */
+}
+
+input[type="text"]:focus {
+    outline: 0;
+}
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+/*BUTTONS*/
+
+
+button {
+    background: black;
+    border: 1px solid rgb(255, 4, 150);
+    border-radius: 0px;
+    color: #f7f7f9;
+    padding: 12px;
+    margin-right: 11px;
+    font-size: 2vh;
+    width: 100%;
+    white-space: nowrap;
+}
+
+#button-phone {
+    font-size: 7vh;
+}
+
+button:focus {outline:0;}
+
+input[type=submit] {
+    background: black;
+    border: 1px solid rgb(255, 4, 150);
+    border-radius: 5px;
+    color: rgb(189, 189, 189);
+}
+
+/*LEVELS*/
+#window {
+    background-image: url("img/night-scene.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}  
+
+#room-inner {
+    background-image: url("img/room.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#room-hallway {
+    background-image: url("img/inside-building.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bar{
+    background-image: url("img/bar.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#bartender{
+    background-image: url("img/robotender.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* CITY */
+#city {
+    background-image: url("img/city.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;   
+}
+
+.destination {
+    position: absolute;
+    color: black;
+    height: 10vh;
+    width: 10vh;
+    font-size: 5vh;
+}
+
+.destination-display {
+    background-color: #ff9c10c4;
+    position: absolute;
+    top: -2vh;
+    left: -3vh;
+    border-radius: 25%;
+}
+
+.marker{
+    color: #ec971f;
+    font-size: 4vh;
+}
+
+#destination-bar{
+    left: 10%;
+    top: 60%;
+}
+
+#destination-cafe{
+    left: 90%;
+    top: 10%;
+}
+
+#destination-store{
+    left: 65%;
+    top: 60%;
+}
+
+#destination-hotel{
+    left: 20%;
+    top: 30%;
+}
+
+#destination-home{
+    left: 90%;
+    top: 50%;
+}
+
+#the-cell{
+    left: 400%;
+    top: 40%;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+#audio-container {
+    display: none;
+}
